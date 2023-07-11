@@ -30,6 +30,8 @@ let package = Package(
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("./"),
+                .headerSearchPath("./OCMock"),
+                .headerSearchPath("./OCMockLib"),
                 .unsafeFlags(["-fno-objc-arc"])
             ],
             cxxSettings: nil,
